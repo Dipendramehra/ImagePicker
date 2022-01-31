@@ -30,7 +30,7 @@ Button camera,gallery;
         camera=findViewById(R.id.btn_camera);
      gallery=findViewById(R.id.btn_gallery);
      imageView=findViewById(R.id.imageView);
-
+//Add permission for camera
             if (ContextCompat.checkSelfPermission(getApplicationContext(),Manifest.permission.CAMERA)==
                     PackageManager.PERMISSION_DENIED) {
             ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CAMERA}, 0);
